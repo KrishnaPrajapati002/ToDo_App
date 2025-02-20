@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 app.instance_path="/tmp"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/todo.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db=SQLAlchemy(app)
 
